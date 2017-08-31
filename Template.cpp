@@ -11,7 +11,7 @@ const int INF = 0x3f3f3f3f;
 const double PI = acos(-1.0);
 
 int main (void) {
-  fastcin;
+  	fastcin;
   
   
 	return 0;
