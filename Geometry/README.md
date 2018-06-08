@@ -1,7 +1,22 @@
 # Geometria
 
 ## Operações
+A estrutura mais básica é uma struct Point:
+```c++
+struct Point{
+    int x;
+    int y;
+};
+```
+Um ponto (x,y) pode representar um vetor da origem até (x,y). <br>
 
+Podem ser feitas as operações, com os pontos/vetores p1 = {x1,y1} e p2 = {x2,y2}:
+- soma <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `p1 + p2 = p3 = (x1 + x2, y1 + y2)`
+- subtração <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `p1 - p2 = p3 = (x1 - x2, y1 - y2)`
+- produto por escalar (w) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `w * p1 = (w*x1, w*y1)`
 
 ## Dot Product - Produto Escalar (.)
 É definido como o módulo da projeção de um vetor em outro.
@@ -100,6 +115,6 @@ a1x + b1y = c1
 a2x + b2y = c2
 ```
 
-Utilizando a regra de Cramer (tome cuidado com determinantes iguais a 0) com as matrizes da imagem abaixo.
+Utilizando a regra de Cramer, conforme as matrizes da imagem abaixo, podemos resolver o sistema linear e portanto achar x e y onde as retas se intersectam.
 
 ![cramer.png](./class/cramer.png)
