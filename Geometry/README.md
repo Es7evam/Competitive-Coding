@@ -33,14 +33,15 @@ Valem as propriedades (facilmente demonstráveis) <br>
 
 ## Cross Product - Produto Vetorial (X)
 É definido como o vetor perpenticular ao produto de ambos os quais o produto é feito, sendo o seu tamanho igual à área que o paralelogramo entre os vetores é formado. <br>
-<center>
-![CrossProduct](Class/crossproduct.png) <br>
+<center> ![CrossProduct](Class/cross_product.png) <br>
 </center>
+
 Pode ser representado pela determinante da matriz cujos coeficientes são os vetores, por exemplo, v1 = {x1, y1} e v2 = {x2, y2}:
+
 <center>
 
 |x1 y1| <br>
-|x2 y2| 
+|x2 y2|
 
 </center>
 
@@ -65,10 +66,44 @@ O que pode ser usado, por exemplo, para saber a orientação entre dois vetores,
 Perceba que, à partir de qualquer ponto de um polígono convexo, de acordo com a sua própria definição, é possível traçar uma reta até qualquer um de seus outros vértices, formando triangulos, como na figura abaixo.
 <p>
 <center>
-![Convex Poligon](Class/convexpolygon.png)
+![convex_polygon](class/convex_polygon.png)
 </center>
 </p>
 
 Como o produto vetorial entre dois vetores, em módulo, retorna a área do paralelogramo que seria formado por eles, isso significa que o produto vetorial dividido por 2 é a área do triângulo que divide o paralelogramo ao meio. <br>
 Voltando à figura acima, podemos, por exemplo, calcular a área do triângulo formado pelos vetores AB, BC e AC, tomando o produto vetorial AB X BC / 2.
 Assim, fazendo sucessivamente o mesmo com os triângulos de 1 a 8, somando as áreas temos a área total do polígono.
+
+## Pontos e Retas
+
+### Distância entre dois pontos
+É dada pelo módulo da subtração entre os próprios pontos <br>
+```
+dist(p, q) = |p-q|
+```
+
+### Distância entre ponto e segmento de reta
+Primeiramente é necessário checar se o dot product entre os vetores que representam o triângulo formado pelas extremidades da reta são maiores do que 0, já que se não for significa que o ponto da reta mais próximo ao ponto é uma das suas extremidades.
+Caso isso ocorra, basta calcular a altura do triângulo formado, então, a distância será dada por: <br>
+
+```c
+if((r-a).(b-a) >= 0 && (r-b).(a-b) >= 0){
+    return abs((b-a)x(r-a)/len(a-b));
+}else{
+    return min(len(r-a), len(r-b));
+}   
+```
+
+### Representação de retas
+Uma reta pode ser representada como um ponto, que indica o "ponto de partida" e um vetor diretor, que indica o "sentido" dela. <br>
+
+Para checar se um ponto pertence a uma reta, basta utilizar o produto vetorial entre o vetor formado pelo "ponto inicial" e o ponto desejado e o vetor diretor da reta. Caso o resultado seja 0 significa que o seno entre esses vetores é 0 e portanto o ângulo entre eles é igual a 0 ou 180 graus, assim sendo considerados como linear.
+
+### Intersecção de Retas
+Tomando o sistema linear dado por:
+```
+a1x + b1y = - c1
+a2x + b2y = - c2
+```
+
+Utilizando a regra de Cramer (tome cuidado com determinantes iguais a 0) com as matrizes da imagem abaixo
