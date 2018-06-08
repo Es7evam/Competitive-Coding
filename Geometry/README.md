@@ -38,13 +38,12 @@ Valem as propriedades (facilmente demonstráveis) <br>
 Pode ser representado pela determinante da matriz cujos coeficientes são os vetores, por exemplo, v1 = {x1, y1} e v2 = {x2, y2}:
 <center>
 
-| | |
-| :-------------: | :---------------- | :---:|
-|x1|y1|
-|x2|y2|
+|x1 y1| <br>
+|x2 y2| 
 
 </center>
-<flushright> <br>
+
+Que é:
 ```
 v1 X v2 = x1*y2 - y1*x2
 ```
