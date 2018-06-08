@@ -32,9 +32,7 @@ Valem as propriedades (facilmente demonstráveis) <br>
 - `a.a = |a|²`
 
 ## Cross Product - Produto Vetorial (X)
-É definido como o vetor perpenticular ao produto de ambos os quais o produto é feito, sendo o seu tamanho igual à área que o paralelogramo entre os vetores é formado. <br>
-<center> ![CrossProduct](./class/crossproduct.png) <br>
-</center>
+É definido como o vetor perpenticular ao produto de ambos os quais o produto é feito, sendo o seu tamanho igual à área que o paralelogramo entre os vetores é formado. <br> ![crossproduct.png](./class/crossproduct.png) <br>
 
 Pode ser representado pela determinante da matriz cujos coeficientes são os vetores, por exemplo, v1 = {x1, y1} e v2 = {x2, y2}:
 
@@ -64,11 +62,7 @@ O que pode ser usado, por exemplo, para saber a orientação entre dois vetores,
 
 ### Cálculo de Área de um Poligono Convexo
 Perceba que, à partir de qualquer ponto de um polígono convexo, de acordo com a sua própria definição, é possível traçar uma reta até qualquer um de seus outros vértices, formando triangulos, como na figura abaixo.
-<p>
-<center>
-![convexpolygon](./class/convexpolygon.png)
-</center>
-</p>
+![convexpolygon.png](./class/convexpolygon.png)
 
 Como o produto vetorial entre dois vetores, em módulo, retorna a área do paralelogramo que seria formado por eles, isso significa que o produto vetorial dividido por 2 é a área do triângulo que divide o paralelogramo ao meio. <br>
 Voltando à figura acima, podemos, por exemplo, calcular a área do triângulo formado pelos vetores AB, BC e AC, tomando o produto vetorial AB X BC / 2.
