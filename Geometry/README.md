@@ -33,7 +33,7 @@ Valem as propriedades (facilmente demonstráveis) <br>
 
 ## Cross Product - Produto Vetorial (X)
 É definido como o vetor perpenticular ao produto de ambos os quais o produto é feito, sendo o seu tamanho igual à área que o paralelogramo entre os vetores é formado. <br>
-<center> ![CrossProduct](Class/cross_product.png) <br>
+<center> ![CrossProduct](./class/crossproduct.png) <br>
 </center>
 
 Pode ser representado pela determinante da matriz cujos coeficientes são os vetores, por exemplo, v1 = {x1, y1} e v2 = {x2, y2}:
@@ -66,7 +66,7 @@ O que pode ser usado, por exemplo, para saber a orientação entre dois vetores,
 Perceba que, à partir de qualquer ponto de um polígono convexo, de acordo com a sua própria definição, é possível traçar uma reta até qualquer um de seus outros vértices, formando triangulos, como na figura abaixo.
 <p>
 <center>
-![convex_polygon](class/convex_polygon.png)
+![convexpolygon](./class/convexpolygon.png)
 </center>
 </p>
 
@@ -102,8 +102,10 @@ Para checar se um ponto pertence a uma reta, basta utilizar o produto vetorial e
 ### Intersecção de Retas
 Tomando o sistema linear dado por:
 ```
-a1x + b1y = - c1
-a2x + b2y = - c2
+a1x + b1y = c1
+a2x + b2y = c2
 ```
 
-Utilizando a regra de Cramer (tome cuidado com determinantes iguais a 0) com as matrizes da imagem abaixo
+Utilizando a regra de Cramer (tome cuidado com determinantes iguais a 0) com as matrizes da imagem abaixo.
+
+![cramer.png](./class/cramer.png)
