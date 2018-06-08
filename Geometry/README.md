@@ -33,8 +33,9 @@ Valem as propriedades (facilmente demonstráveis) <br>
 
 ## Cross Product - Produto Vetorial (X)
 É definido como o vetor perpenticular ao produto de ambos os quais o produto é feito, sendo o seu tamanho igual à área que o paralelogramo entre os vetores é formado. <br>
-<center> ![CrossProduct](Class/cross_product.png) <br>
-
+<center>
+![CrossProduct](Class/crossproduct.png) <br>
+</center>
 Pode ser representado pela determinante da matriz cujos coeficientes são os vetores, por exemplo, v1 = {x1, y1} e v2 = {x2, y2}:
 <center>
 
@@ -64,7 +65,7 @@ O que pode ser usado, por exemplo, para saber a orientação entre dois vetores,
 Perceba que, à partir de qualquer ponto de um polígono convexo, de acordo com a sua própria definição, é possível traçar uma reta até qualquer um de seus outros vértices, formando triangulos, como na figura abaixo.
 <p>
 <center>
-![Convex Poligon](Class/convex_polygon.png)
+![Convex Poligon](Class/convexpolygon.png)
 </center>
 </p>
 
